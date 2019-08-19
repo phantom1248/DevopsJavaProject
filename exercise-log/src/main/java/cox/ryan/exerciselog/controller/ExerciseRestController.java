@@ -1,5 +1,5 @@
 package cox.ryan.exerciselog.controller;
-
+blah
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -42,7 +42,7 @@ public class ExerciseRestController {
 			@PathVariable int exerciseId) {
 		Optional<Exercise> result = exerciseJpaRepository.findById(exerciseId);
 		return result.orElseThrow(() -> 
-				new NoSuchEntityException(exerciseId, Exercise.class));
+		new NoSuchEntityException(exerciseId, Exercise.class));
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, path="/{exerciseId}")
